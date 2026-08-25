@@ -1,0 +1,47 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "b3",
+    "slug": "b3",
+    "title": "b3: Backbone Breaker Benchmark",
+    "group": "Safeguards",
+    "tags": [
+      "Agent"
+    ],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/b3",
+    "inspect_ai": "0.3.260",
+    "eval_version": "4-A",
+    "dependency": "b3"
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "low",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "b3",
+      "samples": 630
+    }
+  ],
+  "total_samples": 630,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "Lakera/b3-agent-security-benchmark-weak",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
